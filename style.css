@@ -3,15 +3,33 @@
 *{
     font-family: 'DotGothic16';
     margin: 0;
+    padding: 0;
 }
+header{
+    padding: 12px 0;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.common-btn{
+    background-color: #ff4654;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #111823;
+    border: none;
 }
 
 nav ul{
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 nav ul li{
@@ -20,4 +38,8 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
+}
+
+.logo{
+    color: #ff4654;
 }
