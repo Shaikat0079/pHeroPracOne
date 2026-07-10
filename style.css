@@ -107,3 +107,63 @@ article {
 .abilities h3 {
   color: whitesmoke;
 }
+
+.work{
+    margin: 50px 0;
+}
+
+.work .container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.gallery{
+    display: grid;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    grid-auto-rows: 300px;
+    grid-template-areas: 
+    
+    "one two three"
+    "four two six"
+    "four five six"
+    
+    ;
+}
+
+.work .container h2{
+    text-align: center;
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1{
+    grid-area: one;
+}
+
+.box-2{
+    grid-area: two;
+}
+
+.box-3{
+    grid-area: three;
+}
+
+.box-4{
+    grid-area: four;
+}
+
+.box-5{
+    grid-area: five;
+}
+
+.box-6{
+    grid-area: six;
+}
